@@ -1,0 +1,43 @@
+.btn-outline-primary
+{
+    color: white;
+    border: none;
+}
+
+.btn-outline-primary:hover
+{
+    background-color: skyblue;
+}
+
+.btn-outline-primary > a, .btn-outline-primary > a:hover
+{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-nav > p
+{
+    margin-top: 15px;
+}
+
+h2, h3, p
+{
+    text-align: center;
+}
+
+@media only screen and (min-width: 641px)
+{
+    .navbar-nav > p
+    {
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 990px)
+{
+    .navbar-nav > p
+    {
+        color: white;
+        text-align: center;
+    }
+}
