@@ -39,3 +39,9 @@ a, a:hover
     text-decoration: none;
     color: white;
 }
+
+#linkedin
+{
+    height: 32px;
+    width: 32px;
+}
