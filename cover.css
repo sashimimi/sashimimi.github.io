@@ -9,11 +9,16 @@ html body
     color: white;
 }
 
+img#headshot
+{
+    border-radius: 50%;
+}
+
 header
 {
     text-align: center;
     font-size: 72px;
-    margin-top: 20%;
+    margin-top: 5%;
 }
 
 p
