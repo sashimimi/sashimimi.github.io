@@ -1,3 +1,5 @@
+/* Navigation styles */
+
 .btn-outline-primary
 {
     color: white;
@@ -20,9 +22,9 @@
     margin-top: 15px;
 }
 
-h2, h3, p
+.navbar-nav > a
 {
-    text-align: center;
+    padding-top: 15px;
 }
 
 @media only screen and (min-width: 641px)
@@ -40,4 +42,22 @@ h2, h3, p
         color: white;
         text-align: center;
     }
+}
+
+/* Body styles */
+
+h2, h3, p
+{
+    text-align: center;
+}
+
+.projecttile
+{
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+.project 
+{
+    padding-top: 3%;
 }
