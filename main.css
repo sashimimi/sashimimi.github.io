@@ -27,6 +27,18 @@
     padding-top: 15px;
 }
 
+a, a:hover
+{
+    text-decoration: none;
+}
+
+img#headshot
+{
+    border-radius: 50%;
+    height: 50%;
+    width: 50%;
+}
+
 @media only screen and (min-width: 641px)
 {
     .navbar-nav > p
@@ -46,18 +58,35 @@
 
 /* Body styles */
 
-h2, h3, p
+h2, h3, h6, p
 {
     text-align: center;
 }
 
+/* Project styles */
+
 .projecttile
 {
-    background-color: lightblue;
+    background-color: gray;
     border: 1px solid black;
+    color: white;
 }
 
-.project 
+.project
 {
     padding-top: 3%;
+}
+
+.projecttile > a
+{
+    text-decoration: none;
+    color: white;
+}
+
+/* Individual project page styles */
+
+.resize
+{
+    height: 90%;
+    width: 90%;
 }
