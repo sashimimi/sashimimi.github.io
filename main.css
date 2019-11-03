@@ -62,31 +62,3 @@ h2, h3, h6, p
 {
     text-align: center;
 }
-
-/* Project styles */
-
-.projecttile
-{
-    background-color: gray;
-    border: 1px solid black;
-    color: white;
-}
-
-.project
-{
-    padding-top: 3%;
-}
-
-.projecttile > a
-{
-    text-decoration: none;
-    color: white;
-}
-
-/* Individual project page styles */
-
-.resize
-{
-    height: 90%;
-    width: 90%;
-}
