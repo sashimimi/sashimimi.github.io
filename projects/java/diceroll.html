@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <title>Portfolio - Mimi Lam</title>
+        <link rel="icon" href="../../favicon.ico">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../main.css"/>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../../favicon.ico"/>
+                    Mimi Lam
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <div class="navbar-nav">
+                        <a href="../../index.html" class="btn btn-outline-primary" role="button">Home</a>
+                        <a href="../../about.html" class="btn btn-outline-primary" role="button">About Me</a> <p>&#9733;</p>
+                        <a href="../../projects.html" class="btn btn-outline-primary" role="button">Projects</a> <p>&#9733;</p>
+                        <a href="../../contact.html" class="btn btn-outline-primary" role="button">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <h2>Dice Roll JFrame</h2>
+        <div class="row no-gutters">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4">
+                <p>
+                    This code snippet features a basic Java project that uses a JFrame.
+                    <br/><br/>
+                    This assignment originally only required the use of a JOptionPane. However, I decided to challenge myself and obtained permission to create my own GUI for the application.
+					This description will primarily focus on the creation of the JFrame.
+					<br/><br/>
+					When creating the application, I focused on building and attaching functionality to the custom dialog.
+					I used the the GridBagLayout as a starting point to place one label and six buttons consisting of five "dice roll" buttons and one exit button using relative positioning.
+					I then added various action listeners for the buttons to represent their functions, which showed the simulation of a dice roll.
+					After the general layout was established, I added the layout into a JPanel, which would then be compiled into a visible GUI.
+					<br/><br/>
+					Working with Java's Swing API proved to be a difficult but fulfilling challenge for me. 
+					It offered an in-depth look at how GUIs are constructed at a code level, which was a stark contrast to Visual Studio's relatively easy to create forms.
+					Taking on this challenge required me to learn how positioning works on a specific dialog box size, and not being able to view the result as I placed components without running the code was time-consuming.
+					I often found myself having trouble with the components not appearing on the dialog (usually the result of the component being outside the dialog view) or appearing in the incorrect locations.
+                </p>
+                <br/>
+            </div>
+            <div class="col-lg-4">
+                <p>
+                    <a href="https://github.com/sashimimi/dicerolljframe"><img src="../../images/github-dark.png"/> Project Repository</a>
+                    <br/><br/>
+                    <img src="../../images/jframeui.PNG" style="width: 90%; height: 90%;"/>
+                    <br/>
+                    <p>An example of the custom dialog, showcasing six buttons and five labels.</p>
+                    <br/><br/>
+                    <p><img src="../../images/jframeuidisabled.PNG" style="width: 90%; height: 90%;"/>
+                    <br/><br/>
+                    An example of the custom dialog with disabled buttons, activated when each button is clicked three times.
+                    Notice how the labels have changed from repeated clicks.</p>
+                </p>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </body>
+</html>

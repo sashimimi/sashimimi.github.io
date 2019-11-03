@@ -1,3 +1,36 @@
+/* Project styles */
+
+.projecttile
+{
+    background-color: gray;
+    border: 1px solid black;
+    color: white;
+}
+
+.project
+{
+    padding-top: 3%;
+}
+
+.projecttile, .projecttile:hover
+{
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar
+{
+    text-align: center;
+}
+
+/* Individual project page styles */
+
+.resize
+{
+    height: 90%;
+    width: 90%;
+}
+
 #githubportfolio
 {
     background-image: url("images/sashimimi-code.png");
@@ -23,7 +56,7 @@
     background-image: url("images/youtubedl-code.PNG");
 }
 
-#caesarencrypt
+#caesarcipher
 {
     background-image: url("images/caesarencrypt-code.PNG");
 }

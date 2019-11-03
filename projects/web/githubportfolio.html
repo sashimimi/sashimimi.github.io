@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <title>Portfolio - Mimi Lam</title>
+        <link rel="icon" href="../../favicon.ico">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../main.css"/>
+        <link rel="stylesheet" href="../../project.css"/>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../../favicon.ico"/>
+                    Mimi Lam
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <div class="navbar-nav">
+                        <a href="../../index.html" class="btn btn-outline-primary" role="button">Home</a> <p>&#9733;</p>
+                        <a href="../../about.html" class="btn btn-outline-primary" role="button">About Me</a> <p>&#9733;</p>
+                        <a href="../../projects.html" class="btn btn-outline-primary" role="button">Projects</a> <p>&#9733;</p>
+                        <a href="../../contact.html" class="btn btn-outline-primary" role="button">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <h2>sashimimi.github.io</h2>
+        <div class="row no-gutters">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4">
+                <p>
+                    <strong><i>sashimimi.github.io</i></strong> is the development portfolio of sashimimi and is the website that this page is on!
+                    <br/><br/>
+                    It was built using HTML, CSS, JavaScript, and the Bootstrap library, allowing for responsive web design.
+                    It is hosted on GitHub Pages, a static website hosting service offered by GitHub.
+                    <br/><br/>
+					This project began as a desire to create a central website where I could document my projects.
+					Although it primarily serves as a method of showcasing my abilities, I also saw it as a way to watch my growth as I continue to learn.
+					<br/><br/>
+                    As it is my personal portfolio, I wanted it to express the following:
+                    <ul>
+                        <li>my personality</li>
+                        <li>my skills</li>
+                        <li>and a way to contact me.</li>
+                    </ul>
+                    In order to do that, I began designing ideas for website layouts. 
+                    An early version of this project had the content pages linked in the navigation bar implemented on a single-page spread.
+                    While this idea sounded good on paper and is popular among many websites, the implementation did not satisfy my requirements as it appeared cluttered.
+                    I eventually opted for a simplistic design, a design that would be appealing and focused more on what is most important: my skills.
+                    <br/><br/>
+                    The cover page is one of the most important pages on the website, as it is the first impression a visitor receives of me.
+                    My main goals for this page were to convey a glimpse of my personality and set a theme for the website going forward.
+                    <br/><br/>
+                    A showcase of skills is extremely vital in software development, which makes the project page the most important page on the website.
+                    I wanted to add flair and color to this page that would make this page unique compared to the other pages, which led to the development of the project tiles.
+                    The project tiles are created using code from each project, making each tile as unique as the project itself.
+                    An issue that I ran into involved the creation of opacity in the image, which would also opaque the text. 
+                    To solve this, I decided to increase opacity in the image source file, allowing for the text to remain consistent.
+                    <br/><br/>
+                    Another issue I ran into when developing the project tiles was only portions of the tile was clickable.
+                    After some trial and error, this bug was fixed by enveloping the contents of the project tile in the <i>a</i> element and applying Bootstrap classes to it instead of a <i>div</i> element.
+                </p>
+                <br/>
+            </div>
+            <div class="col-lg-4">
+                <p>
+                    <a href="https://github.com/sashimimi/sashimimi.github.io"><img src="../../images/github-dark.png"/> Project Repository</a>
+                    <br/><br/>
+                    <img src="../../images/githubportfolio_cover.PNG" alt="Cover page of sashimimi.github.io" class="resize"/>
+                    <br/>
+                    The cover page on version 1.0.0
+                    <br/><br/><br/><br/>
+                    <img src="../../images/githubportfolio_projects.PNG" alt="Projects page of sashimimi.github.io" class="resize"/>
+                    <br/>
+                    The projects page, showcasing the project tiles on version 1.0.0
+                    <br/><br/><br/><br/>
+                    <div class="projecttile" id="githubportfolio" style="text-align: center; margin-left: 10px;">
+                        <a href="#" style="color: white;"><p class="project"><h4>sashimimi.github.io</h4><br/>The development portfolio of sashimimi, written with HTML, CSS, JavaScript, and love.</p></a>
+                    </div>
+                    <p>An example of a broken project tile. Notice how the link stops functioning when hovering over certain areas of the tile.</p>
+                </p>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </body>
+</html>

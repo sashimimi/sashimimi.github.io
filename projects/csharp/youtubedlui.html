@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <title>Portfolio - Mimi Lam</title>
+        <link rel="icon" href="../../favicon.ico">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../main.css"/>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../../favicon.ico"/>
+                    Mimi Lam
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <div class="navbar-nav">
+                        <a href="../../index.html" class="btn btn-outline-primary" role="button">Home</a>
+                        <a href="../../about.html" class="btn btn-outline-primary" role="button">About Me</a> <p>&#9733;</p>
+                        <a href="../../projects.html" class="btn btn-outline-primary" role="button">Projects</a> <p>&#9733;</p>
+                        <a href="../../contact.html" class="btn btn-outline-primary" role="button">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <h2>YouTubeDL-UI</h2>
+        <div class="row no-gutters">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4">
+                <p>
+                    <strong><i>YouTubeDL-UI</i></strong> is a Windows Forms application that allows for the conversion and metadata editing of mp3 files.
+                    <br/><br/>
+                    It was built using C# and has two dependencies, ffmpeg and youtube-dl.
+                    These two dependencies allow for the downloading of YouTube videos and the modification of mp3 metadata.
+                    <br/><br/>
+                    This project was a new experience for me because it required skills that I was not completely familiar with yet, such as:
+                    <ul>
+                        <li>the management of local dependencies</li>
+                        <li>processing of file systems</li>
+                        <li>creation of new files</li>
+                        <li>and the usage of the command line in an application.</li>
+                    </ul>
+                    <p>I learned that in order to check for the necessary files for a project, I had to determine the file path of the dependencies.
+                    Since the path of the dependencies can vary greatly depending on the user's system, I opted to search for the files in the same folder as the executable and inform the user to place the dependencies there by error message box.
+                    <br/><br/>
+                    Along with these dependencies, I learned the basics of using an external program alongside my application in the form of the command line prompt.
+                    I had to implement a way to run commands in the command prompt to activate the dependencies in a way that would not be intrusive to the user, leading to the added automatic closing of the prompt upon completion and showing no window.
+                    Although it is not perfect, it was a new experience for me to improve on.
+                    In the future, I plan to provide an in-program command line for users to view what is being ran in the background.
+                    <br/><br/>
+                    This program was also my first encounter with unit testing. 
+                    Prior to this project, I did not have any experience with unit testing, but after doing research on Visual Studio's unit test library, I was able to implement unit tests for checking dependencies, opening the command prompt, and the processing of strings.
+                    <br/><br/>
+                    Although this program is not yet complete, I plan to use any future knowledge I get from education and research to complete and refine this application.
+                    </p>
+                </p>
+                <br/>
+            </div>
+            <div class="col-lg-4">
+                <p>
+                    <a href="https://github.com/sashimimi/youtubedl-ui"><img src="../../images/github-dark.png"/> Project Repository</a>
+                    <br/><br/>
+                    <img src="../../images/ytdldownload.PNG" style="width: 85%; height: 85%;"/>
+                    <br/>
+                    The download prompt, showcasing a textbox for a link and a checkbox for metadata.
+                    <br/><br/>
+                    <img src="../../images/ytdlerror.PNG" style="width: 85%; height: 85%;"/>
+                    <br/>
+                    The error message that appears when the dependencies are not found.
+                    <br/><br/>
+                    <img src="../../images/ytdlunittests.PNG" style="width: 85%; height: 85%;"/>
+                    <br/>
+                    A series of unit tests. Most are successful, however, one is unsuccessful due to a file path struggle.
+                </p>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </body>
+</html>

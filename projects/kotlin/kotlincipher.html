@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <title>Portfolio - Mimi Lam</title>
+        <link rel="icon" href="../../favicon.ico">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../main.css"/>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../../favicon.ico"/>
+                    Mimi Lam
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <div class="navbar-nav">
+                        <a href="../../index.html" class="btn btn-outline-primary" role="button">Home</a>
+                        <a href="../../about.html" class="btn btn-outline-primary" role="button">About Me</a> <p>&#9733;</p>
+                        <a href="../../projects.html" class="btn btn-outline-primary" role="button">Projects</a> <p>&#9733;</p>
+                        <a href="../../contact.html" class="btn btn-outline-primary" role="button">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <h2>Caesar Cipher in Kotlin</h2>
+        <div class="row no-gutters">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4">
+                <p>
+                    This code snippet features the <strong><i>Caesar cipher</i></strong> implemented in the <strong><i>Kotlin programming language</i></strong>.
+                    The Caesar cipher encrypts and decrypts messages by shifting the letters in the chosen message by a certain numeric value.
+					<br/><br/>
+					It was originally created for an Android as a cryptography translator app and was a private, collaborative project.
+                    <br/><br/>
+                    The general process for encryption and decryption in this application is as follows:
+                    <ol>
+                        <li>receive user input</li>
+                        <li>split the input string into an array</li>
+                        <li>loop through the array</li>
+                        <li>convert the character into a numeric representation of that character</li>
+                        <li>match the numeric representation to a converted value</li>
+                        <li>add the converted value into a final string to return</li>
+                    </ol>
+                    <p>In order to implement the cipher, I needed to figure out what the algorithm for the cipher was and also how to implement it programmatically.
+					Using the encryption algorithm <i>c = (x + n) mod 26</i> and the decryption algorithm <i>c = (x - n) mod 26</i>, I converted each letter in a message into a number between 10 and 35 (Unicode character representations of the alphabet in Java) and matched that number to its converted letter.
+					The output is then concatenated together to produce a converted message.
+                    <br/><br/>
+                    Although this implementation is not perfect, this project gave me an insight into creating real-world applications that may need complex algorithms.
+                    <br/><br/>
+                    Code for the project can be found below.</p>
+                </p>
+                <br/>
+            </div>
+            <div class="col-lg-4">
+                <p>
+					<a href="https://gist.github.com/sashimimi/60ab7f36c03b1366630f58afd01443a5"><img src="../../images/github-dark.png"/> View Caesar Encryption Gist</a>
+					<br/><br/>
+                    <a href="https://gist.github.com/sashimimi/682fb7ca53da9b74ee0383272e37a581"><img src="../../images/github-dark.png"/> View Caesar Decryption Gist</a>
+                    <br/><br/>
+                    <img src="../../images/caesarencryptresult.PNG"/>
+                    <br/>
+                    A running example of the Caesar encrypt code, converting "hello" to "mjqqt" with a shift of 5.
+                    <br/><br/>
+                    <img src="../../images/caesardecryptresult.PNG"/>
+                    <br/>
+                    A running example of the Caesar decrypt code, converting "mjqqt" to "hello" with a shift of 5.
+                    <br/>
+                </p>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+        
+        <div class="row no-gutters">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Encryption GitHub Gist
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <script src="https://gist.github.com/sashimimi/60ab7f36c03b1366630f58afd01443a5.js"></script>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Decryption GitHub Gist
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                <script src="https://gist.github.com/sashimimi/682fb7ca53da9b74ee0383272e37a581.js"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </body>
+</html>
