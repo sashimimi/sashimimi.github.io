@@ -85,6 +85,7 @@ if (isset($_POST['hiddenuser']))
         <?php if ($_SESSION['permission'] == "admin") { ?>
             <a href="add.php"><input type="button" class="btn btn-primary" name="add" value="Add"/></a>
         <?php } ?>
+        <a href="checkout.php"><input type="button" class="btn btn-primary" name="checkout" value="Checkout"/></a>
         <a href="login.html"><input type="button" class="btn btn-primary" name="logout" value="Logout"/></a>
     <?php } ?>
     <?php } $_SESSION['invalid'] = false; ?>
